@@ -1,4 +1,4 @@
-package de.phitho.testcontainers.examples;
+package de.phitho.testcontainers.examples.junit5;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -49,19 +49,20 @@ public class BrowserWebdriverDockerComposeTest {
         chromeDriver.get("http://host.testcontainers.internal:"+CHRONOGRAF_PORT);
     }
 
-    @AfterEach
-    void tearDown() {
-        chromeContainer.afterTest(new TestDescription() {
-
-            @Override
-            public String getTestId() {
-                return "test_id";
-            }
-
-            @Override
-            public String getFilesystemFriendlyName() {
-                return "FileName";
-            }
-        }, Optional.empty());
-    }
+//
+//    @AfterEach
+//    void tearDown() {
+//        chromeContainer.afterTest(new TestDescription() {
+//
+//            @Override
+//            public String getTestId() {
+//                return "test_id";
+//            }
+//
+//            @Override
+//            public String getFilesystemFriendlyName() {
+//                return "FileName";
+//            }
+//        }, Optional.empty());
+//    }
 }
