@@ -50,7 +50,7 @@ public class MultiBrowserWebdriverDockerComposeTest {
 
     @ParameterizedTest
     @MethodSource("testDrivers")
-    void browse_chronograph_with(WebDriver driver) {
+    void browse_chronograf_with_multiple_driver(WebDriver driver) {
         driver.get("http://host.docker.internal:"+CHRONOGRAF_PORT);
     }
 }
