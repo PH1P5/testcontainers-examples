@@ -1,0 +1,19 @@
+deviceData,deviceId=1000 distance=100 1572970073000000000
+deviceData,deviceId=1000 temperature=20 1572970073000000000
+deviceData,deviceId=1000 battery=98 1572970073000000000
+
+deviceData,deviceId=1000 distance=105 1572971073000000000
+deviceData,deviceId=1000 temperature=23 1572971073000000000
+deviceData,deviceId=1000 battery=95 1572971073000000000
+
+deviceData,deviceId=1000 distance=107 1572972073000000000
+deviceData,deviceId=1000 temperature=25 1572972073000000000
+deviceData,deviceId=1000 battery=87 1572972073000000000
+
+deviceData,deviceId=1000 distance=112 1572973073000000000
+deviceData,deviceId=1000 temperature=24 1572973073000000000
+deviceData,deviceId=1000 battery=82 1572973073000000000
+
+deviceData,deviceId=1000 distance=118 1572974073000000000
+deviceData,deviceId=1000 temperature=24 1572974073000000000
+deviceData,deviceId=1000 battery=77 1572974073000000000

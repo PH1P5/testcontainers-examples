@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+  influxdb:
+    image: influxdb:latest
+    environment:
+      INFLUXDB_DB: sensor
+      INFLUXDB_ADMIN_USER: admin
+      INFLUXDB_ADMIN_PASSWORD: secret
+    ports:
+      - 8086:8086
+  testdata:
+    build:
+      context: testdata
+  chronograf:
+    image: chronograf:latest
+    ports:
+      - 8888:8888
