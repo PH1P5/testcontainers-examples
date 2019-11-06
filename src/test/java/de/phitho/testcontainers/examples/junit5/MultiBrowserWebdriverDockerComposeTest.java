@@ -27,8 +27,8 @@ public class MultiBrowserWebdriverDockerComposeTest {
     public static DockerComposeContainer chronograf =new DockerComposeContainer(
                     new File("selenium-grid-compose.yml"),
                     new File("docker-compose.yml"))
-                    .withExposedService("chronograf_1", CHRONOGRAF_PORT)
-                    .withExposedService("hub_1", SELENIUM_HUB_PORT)
+                    .withExposedService("chronograf", CHRONOGRAF_PORT, Wait.forHttp("/"))
+                    .withExposedService("hub", SELENIUM_HUB_PORT)
                     .withLocalCompose(true);
 
 
