@@ -31,7 +31,6 @@ public class MultiBrowserWebdriverDockerComposeTest {
                     .withExposedService("hub", SELENIUM_HUB_PORT)
                     .withLocalCompose(true);
 
-
     private static Stream<WebDriver> testDrivers() {
         return Stream.of(chrome, firefox);
     }
