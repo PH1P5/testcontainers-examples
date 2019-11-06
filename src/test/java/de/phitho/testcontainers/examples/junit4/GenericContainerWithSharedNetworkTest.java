@@ -25,7 +25,7 @@ public class GenericContainerWithSharedNetworkTest {
             .withNetworkAliases("solr");
 
     @Test
-    public void name() {
+    public void browse_solr() {
         final WebDriver webDriver = chromeContainer.getWebDriver();
 
         // use the alias 'solr' as defined for the shared docker network
