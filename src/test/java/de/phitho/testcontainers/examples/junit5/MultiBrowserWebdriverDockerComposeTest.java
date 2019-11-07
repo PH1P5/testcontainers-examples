@@ -50,6 +50,7 @@ public class MultiBrowserWebdriverDockerComposeTest {
     @ParameterizedTest
     @MethodSource("testDrivers")
     void browse_chronograf_with_multiple_driver(WebDriver driver) {
+        // this does not work on linux, use the service name 'chronograf' instead as host name
         driver.get("http://host.docker.internal:"+CHRONOGRAF_PORT);
     }
 }
