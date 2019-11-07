@@ -49,7 +49,11 @@ public class BrowserWebdriverDockerComposeTest {
         chromeDriver.get("http://host.testcontainers.internal:"+CHRONOGRAF_PORT);
     }
 
-//
+/*
+    VNC recording is broken in JUnit 5, see https://github.com/testcontainers/testcontainers-java/issues/1341
+
+    This is a workaround to enable VNC recording.
+ */
 //    @AfterEach
 //    void tearDown() {
 //        chromeContainer.afterTest(new TestDescription() {
